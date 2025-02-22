@@ -16,7 +16,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   const scaledProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div className="relative"> {/* Ensures correct positioning */}
+    <div>
       {/* Vertical Line */}
       <motion.div
         style={{ scaleY: scaledProgress }}
