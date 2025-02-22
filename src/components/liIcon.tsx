@@ -1,6 +1,6 @@
 "use client";
 import React, { RefObject } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
 // Define Props for LiIcon
 interface LiIconProps {
