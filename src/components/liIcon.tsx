@@ -1,15 +1,22 @@
-import React from "react";
+"use client";
+import React, { RefObject } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const LiIcon = ({ reference }) => {
+// Define Props for LiIcon
+interface LiIconProps {
+  reference: RefObject<HTMLLIElement | null>;
+}
+
+const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
     offset: ["start end", "center start"],
   });
+
   const scaledProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div > 
+    <div className="relative"> {/* Ensures correct positioning */}
       {/* Vertical Line */}
       <motion.div
         style={{ scaleY: scaledProgress }}
@@ -17,8 +24,8 @@ const LiIcon = ({ reference }) => {
       />
 
       {/* Icon */}
-      <figure className="absolute left-[0px] sm:left-[100px]  stroke-dark z-[10]">
-        <svg className="" width="75" height="75" viewBox="0 0 100 100">
+      <figure className="absolute left-[-5px] sm:left-[95px] stroke-dark z-10">
+        <svg width="75" height="75" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="20" className="stroke-blue-950 stroke-1 fill-none" />
           <motion.circle
             cx="50"
