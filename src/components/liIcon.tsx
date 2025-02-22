@@ -20,11 +20,11 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
       {/* Vertical Line */}
       <motion.div
         style={{ scaleY: scaledProgress }}
-        className="absolute left-[35px] sm:left-[135px] top-0 w-[4px] h-full bg-blue-950 origin-top dark:bg-white"
+        className="absolute left-[30px]  md:left-[80px] lg:left-[110px] top-0 w-[4px] h-full bg-blue-950 origin-top dark:bg-white"
       />
 
       {/* Icon */}
-      <figure className="absolute left-[-5px] sm:left-[95px] stroke-dark z-10">
+      <figure className="absolute left-[-5px] md:left-[45] lg:left-[75px] stroke-dark z-10">
         <svg width="75" height="75" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="20" className="stroke-blue-950 stroke-1 fill-none" />
           <motion.circle
