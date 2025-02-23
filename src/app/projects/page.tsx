@@ -4,6 +4,7 @@ import {FaGithub } from "react-icons/fa";
 
 interface AchievementProps {
   title: string;
+  subtitle: string;
   techStack: string;
   projectLink: string;
   desc: string;
@@ -12,6 +13,7 @@ interface AchievementProps {
 
 const ProjectDetails: React.FC<AchievementProps> = ({
   title,
+  subtitle,
   techStack,
   projectLink,
   desc,
@@ -20,22 +22,25 @@ const ProjectDetails: React.FC<AchievementProps> = ({
   return (
     <div className="my-8 w-[80%] max-w-lg mx-auto flex flex-col justify-center">
       <div className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg flex justify-between max-w-[500px] ">
-        <div className="flex  justify-center flex-col md:flex-col gap-1">
+        <div className="flex  justify-center flex-col md:flex-col gap-1 w-full max-w-[300px]">
           {/* Image */}
-          <div className="flex justify-center flex-col gap-2">
-            <img
-              src={imageSrc}
-              className="w-auto h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-300"
-            />
+          <div className="flex justify-center flex-col gap-2 w-full max-w-[300px]">
+          <img
+          src={`https://opengraph.githubassets.com/1/adi7pranav/${imageSrc}`}
+          className="h-auto aspect-[16/9] rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+          />
             </div>
           
 
           {/* Text Content */}
           <div>
             <h3 className="capitalize font-bold text-xl flex items-center underline underline-offset-4">
-              {title}
+              {title}<br/>
               
             </h3>
+            <h4 className="capitalize font-bold text-lg flex items-center">
+            {subtitle}
+            </h4>
             {/* <a href={projectLink} target="_blank" rel="noopener noreferrer">
                {title}
               </a><br/> */}
@@ -51,7 +56,7 @@ const ProjectDetails: React.FC<AchievementProps> = ({
           ))}
         </ul> */}
             <p>{desc}</p>
-            <a  href="https://drive.google.com/uc?export=download&id=1S7AZiGgHmBMOLLYEgdw_xyINgygdmfvK" 
+            <a  href={projectLink} target="_blank"
   className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md 
              hover:bg-blue-700 transition-all dark:bg-orange-600"
 >
@@ -74,23 +79,26 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 items-center">
           <ProjectDetails
             title="Zero Waste"
+            subtitle="Request and Donation App"
             techStack="Java, Android Studio, Firebase"
-            projectLink="https://google.com"
-            imageSrc="./awardSoty.jpg"
+            projectLink="https://github.com/adi7pranav/Zero-Waste"
+            imageSrc="Zero-Waste"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
             />
           <ProjectDetails
-            title="Best Student of Institute"
-            techStack="BMSIT & M"
-            projectLink="https://google.com"
-            imageSrc="./awardSoty.jpg"
+            title="P.A.W.S."
+            subtitle="Pet Adoption and Welfare System"
+            techStack="HTML, CSS, JS, PHP, MySQL"
+            projectLink="https://github.com/adi7pranav/PAWS-Pet_Adoption_and_Welfare_System"
+            imageSrc="PAWS-Pet_Adoption_and_Welfare_System"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
             />
           <ProjectDetails
-            title="Best Student of Institute"
-            techStack="BMSIT & M"
-            projectLink="https://google.com"
-            imageSrc="./awardSoty.jpg"
+            title="Saarthi"
+            subtitle="Traffic Sign-Detection and Alert System"
+            techStack="Python, Numpy, OpenCV"
+            projectLink="https://github.com/adi7pranav/Saarthi-Traffic-Sign-Detection-and-Alert-System"
+            imageSrc="Saarthi-Traffic-Sign-Detection-and-Alert-System"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
             />
       </div>
