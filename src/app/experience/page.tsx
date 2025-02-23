@@ -25,7 +25,7 @@ const ExpDetails: React.FC<ExperienceProps> = ({
   const ref = useRef<HTMLLIElement>(null);
 
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col justify-between">
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col justify-between">
       <LiIcon reference={ref} />
       <div className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg">
         <div className="flex justify-start items-start gap-4 left-16">
