@@ -38,7 +38,7 @@ const ProjectDetails: React.FC<AchievementProps> = ({
               {title}<br/>
               
             </h3>
-            <h4 className="capitalize font-bold text-lg flex items-center">
+            <h4 className="capitalize font-bold text-base flex items-center">
             {subtitle}
             </h4>
             {/* <a href={projectLink} target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ const ProjectDetails: React.FC<AchievementProps> = ({
             <li key={index}>{point}</li>
           ))}
         </ul> */}
-            <p>{desc}</p>
+            <p className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg">{desc}</p>
             <a  href={projectLink} target="_blank"
   className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md 
              hover:bg-blue-700 transition-all dark:bg-orange-600"
@@ -72,8 +72,8 @@ const ProjectDetails: React.FC<AchievementProps> = ({
 
 export default function Projects() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-20 pb-20">
-      <h2 className="font-bold text-6xl mb-8 w-full text-center">
+    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-24 pb-20">
+      <h2 className="font-bold text-6xl w-full text-center">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 items-center">
@@ -83,7 +83,7 @@ export default function Projects() {
             techStack="Java, Android Studio, Firebase"
             projectLink="https://github.com/adi7pranav/Zero-Waste"
             imageSrc="Zero-Waste"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            desc = "Zero-Waste is a Java-based app that connects donors with individuals in need, reducing goods waste and promoting community support. Users can list or request items, while Google Maps integration ensures seamless donation delivery. Built with Firebase for real-time data and secure authentication, it fosters sustainability, empathy, and resource sharing"
             />
           <ProjectDetails
             title="P.A.W.S."
@@ -91,15 +91,15 @@ export default function Projects() {
             techStack="HTML, CSS, JS, PHP, MySQL"
             projectLink="https://github.com/adi7pranav/PAWS-Pet_Adoption_and_Welfare_System"
             imageSrc="PAWS-Pet_Adoption_and_Welfare_System"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            desc="PAWS - Pet Adoption and Welfare System is a user-friendly platform designed to facilitate pet adoption and welfare. Built with HTML, CSS, JavaScript, PHP, and MySQL on an Apache server (XAMPP), it connects pet seekers with adopters, ensuring a seamless adoption process while promoting responsible pet care and welfare. 🐾"
             />
           <ProjectDetails
             title="Saarthi"
-            subtitle="Traffic Sign-Detection and Alert System"
+            subtitle="Road Sign Detection and Alert System"
             techStack="Python, Numpy, OpenCV"
             projectLink="https://github.com/adi7pranav/Saarthi-Traffic-Sign-Detection-and-Alert-System"
             imageSrc="Saarthi-Traffic-Sign-Detection-and-Alert-System"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            desc = "Saarthi - Road Sign Detection and Alert System is a project aimed to alert drivers about roadside traffic signs they may miss or not recognize. Developed as a project that won PBL Open Day Runner-Up, the app enhances road safety by providing real-time sign detection and alert, ensuring better awareness and compliance. 🚦🚗"
             />
       </div>
     </main>
