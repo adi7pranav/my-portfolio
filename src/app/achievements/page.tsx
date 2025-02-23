@@ -171,7 +171,7 @@ export default function Achievements() {
             companyLink="https://olympiads.hbcse.tifr.res.in/"
             time="2016"
             address="Patna"
-            imageSrc1="./NCCA.png"
+            imageSrc1="./nccA.png"
             imageSrc2=""
             work="Earned the NCC 'A' Certificate, demonstrating discipline, leadership, and commitment to service under the Indian National Cadet Corps (Air Wing)."
             />
