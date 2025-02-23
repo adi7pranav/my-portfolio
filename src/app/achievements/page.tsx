@@ -48,9 +48,11 @@ const AchievementDetails: React.FC<AchievementProps> = ({
               {position}
               
             </h3>
-            <a href={companyLink} target="_blank" rel="noopener noreferrer">
+            
+            {/* <a href={companyLink} target="_blank" rel="noopener noreferrer"> */}
                {company}
-              </a><br/>
+              {/* </a> */}
+              <br/>
             <span className="capitalize text-lg sm:text-lg text-dark/75">
               {time} | {address}
             </span>
