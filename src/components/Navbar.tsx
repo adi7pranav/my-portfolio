@@ -60,20 +60,20 @@ const Navbar = () => {
       {/* Navigation Links (Desktop) */}
       <div className="hidden md:flex gap-6">
         <NavLink href="/" title ='Home'/>
-        <NavLink href="/about" title ='About'/>
+        <NavLink href="/experience" title ='Experience'/>
         <NavLink href="/projects" title ='Projects'/>
         <NavLink href="/achievements" title ='Achievements' />
-        <NavLink href="/experience" title ='Experience'/>
+        <NavLink href="/about" title ='About'/>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-[rgba(0,0,0,0.8)] backdrop-blur-md flex flex-col items-center py-4 md:hidden">
           <NavLink href="/" title ='Home' onClick={() => setMenuOpen(false)}/>
-          <NavLink href="/about" title ='About' onClick={() => setMenuOpen(false)}/>
+          <NavLink href="/experience" title ='Experience' onClick={() => setMenuOpen(false)}/>
           <NavLink href="/projects" title ='Projects' onClick={() => setMenuOpen(false)}/>
           <NavLink href="/achievements" title ='Achievements' onClick={() => setMenuOpen(false)}/>
-          <NavLink href="/experience" title ='Experience' onClick={() => setMenuOpen(false)}/>
+          <NavLink href="/about" title ='About' onClick={() => setMenuOpen(false)}/>
         </div>
       )}
       {/* Dark Mode Toggle */}
