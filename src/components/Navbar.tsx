@@ -52,7 +52,18 @@ const Navbar = () => {
       >
         {menuOpen ? <FiX /> : <FiMenu />}
       </button>
-      <p className="text-xl font-semibold">Portfolio</p>
+      <div className="flex items-center gap-3">
+  <a href="/" className="flex items-center gap-2">
+    <img 
+      src="/logo.jpg" 
+      alt="Logo" 
+      className="w-10 h-10 rounded-full object-cover" 
+    />
+    <p className="text-xl font-semibold">Portfolio</p>
+  </a>
+</div>
+
+
 
       
 
