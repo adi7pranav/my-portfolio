@@ -72,7 +72,7 @@ const ProjectDetails: React.FC<AchievementProps> = ({
 
 export default function Projects() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-24 pb-20">
+    <main className="relative min-h-screen transition-all duration-5000 text-black dark:text-white pt-24 pb-20">
       <h2 className="font-bold text-6xl w-full text-center">
         Projects
       </h2>
