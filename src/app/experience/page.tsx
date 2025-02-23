@@ -47,7 +47,7 @@ const ExpDetails: React.FC<ExperienceProps> = ({
         </div>
 
         {/* Work List */}
-        <ul className="list-disc pl-5 mt-2 space-y-2 text-xl">
+        <ul className="list-disc pl-5 mt-2 space-y-2 text-xl bg-white/30 dark:bg-black/30 backdrop-blur-sm p-3 rounded-lg">
           {work.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
@@ -115,9 +115,9 @@ const EduDetails: React.FC<EducationProps> = ({
 // Main Experience Component
 export default function Experience() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-20 pb-20">
+    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-24 pb-20">
       <div className="relative flex-row items-center justify-center">
-        <h2 className="font-bold text-6xl mb-16 w-full text-center">Experience</h2>
+        <h2 className="font-bold text-6xl mb-8 w-full text-center">Experience</h2>
         <div className="w-[90%] mx-auto relative">
           <ul>
             <ExpDetails

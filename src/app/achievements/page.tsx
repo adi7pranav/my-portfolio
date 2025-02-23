@@ -64,7 +64,7 @@ const AchievementDetails: React.FC<AchievementProps> = ({
             <li key={index}>{point}</li>
           ))}
         </ul> */}
-            <p>{work}</p>
+           <p className="bg-white/30 dark:bg-black/30 backdrop-blur-sm p-3 rounded-lg">{work}</p>
           </div>
         </div>
       </div>
@@ -74,8 +74,8 @@ const AchievementDetails: React.FC<AchievementProps> = ({
 
 export default function Achievements() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-20 pb-20">
-      <h2 className="font-bold text-6xl mb-8 w-full text-center">
+    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-24 pb-20">
+      <h2 className="font-bold text-6xl w-full text-center">
         Achievements
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-1 items-center">
@@ -87,17 +87,17 @@ export default function Achievements() {
             address="Bengaluru"
             imageSrc1="./awardSoty.jpg"
             imageSrc2="./awardSoty3.png"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            work="Recognized as the Best Student of the Institute for outstanding academic performance, leadership, and contributions to the college community."
             />
            <AchievementDetails
             position="National Winner"
             company="Smart India Hackathon"
             companyLink="https://google.com"
-            time="25th-26th Aug 2022"
+            time="Aug 2022"
             address="Komarapalayam"
             imageSrc1="./awardSih.jpg"
             imageSrc2="./awardSih2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            work="Part of team that won in India’s largest hackathon, solving real-world problems with innovation, competing against top national teams."
             />
           <AchievementDetails
             position="International Siver Medal"
@@ -107,8 +107,8 @@ export default function Achievements() {
             address="Delhi"
             imageSrc1="./awardSof.jpg"
             imageSrc2="./awardSof2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
-          />
+            work="Secured International 2nd Rank in the Science Olympiad Foundation’s Cyber Olympiad, showcasing excellence in computational and analytical skills."
+            />
       </div>
 
       <h2 className="font-bold text-6xl mb-8 w-full text-center">
@@ -123,7 +123,7 @@ export default function Achievements() {
             address="Bengaluru"
             imageSrc1="./awardQuiz.jpg"
             imageSrc2="./awardQuiz2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            work="Achieved 1st runner-up position twice in the VTU State Quiz Championship, competing against top university teams in technical and general knowledge quizzes."
             />
            <AchievementDetails
             position="Resource Person"
@@ -133,7 +133,7 @@ export default function Achievements() {
             address="BMSIT & M"
             imageSrc1="./openCourse1.png"
             imageSrc2="./openCourse2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
+            work="Served as a resource person, mentoring students in programming fundamentals, algorithms, and problem-solving as part of an open IT course."
             />
           <AchievementDetails
             position="Coordinator, Quiz Club"
@@ -143,8 +143,8 @@ export default function Achievements() {
             address="Bengaluru"
             imageSrc1="./quizCoord1.jpg"
             imageSrc2="./quizCoord2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
-          />
+            work="Coordinated the college quiz club, organizing competitions like Quizzardry and training students for inter-collegiate and national quiz events."
+            />
             <AchievementDetails
             position="First, City School Science Quiz"
             company="BMSIT & M"
@@ -153,8 +153,8 @@ export default function Achievements() {
             address="Patna"
             imageSrc1="./cityQuiz.jpg"
             imageSrc2="./cityQuiz2.jpg"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
-          />
+            work="Won first place in a prestigious city-wide science quiz, demonstrating deep knowledge and quick thinking."
+            />
           <AchievementDetails
             position="Qualified RMO"
             company="Homi Bhabha Centre for Science Education"
@@ -163,8 +163,8 @@ export default function Achievements() {
             address="Patna"
             imageSrc2="./RMO.jpg"
             imageSrc1="./RMO2.png"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
-          />
+            work="Selected for the RMO, one of Indias most competitive mathematics contests, showcasing advanced problem-solving abilities"
+            />
             <AchievementDetails
             position="NCC A Certificate"
             company="No.1 Bihar Air Sqn."
@@ -173,8 +173,8 @@ export default function Achievements() {
             address="Patna"
             imageSrc1="./NCCA.png"
             imageSrc2=""
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est sem, cursus at dapibus eu, elementum ac sem. Mauris eget massa semper libero lacinia posuere. Vivamus ultrices ex ornare est sagittis feugiat."          
-          />
+            work="Earned the NCC 'A' Certificate, demonstrating discipline, leadership, and commitment to service under the Indian National Cadet Corps (Air Wing)."
+            />
       </div>
     </main>
   );
