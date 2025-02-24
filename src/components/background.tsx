@@ -5,10 +5,14 @@ import { useTheme } from "@/context/ThemeContext";
 import { useMemo } from "react";
 
 export default function Background() {
-  const { darkMode } = useTheme();
+  const { darkMode, themeName } = useTheme();
 
-  // Memoize the image source to avoid unnecessary re-renders
-  const imageSrc = useMemo(() => (darkMode ? "/bgDark3.png" : "/bgLight3.png"), [darkMode]);
+  // Determine the background image based on themeName and darkMode
+  const imageSrc = useMemo(() => {
+    if (themeName === "abstract") return darkMode ? "/bgDarkY.webp" : "/bgLightY.webp";
+    if (themeName === "nature") return darkMode ? "/bgdark1.png" : "/bgLight1.png";
+    return darkMode ? "/bgDark3.png" : "/bgLight3.png"; // Default theme
+  }, [darkMode, themeName]);
 
   return (
     <div className="fixed inset-0 w-full h-full z-[-1]">
@@ -16,11 +20,12 @@ export default function Background() {
         src={imageSrc}
         alt="Background"
         fill
-        quality={80} // Slightly lower quality for faster load
-        priority // Ensures fast loading
-        placeholder="blur" // Smoothens initial load
-        blurDataURL={imageSrc} // Uses the actual image as the blur placeholder
-        unoptimized // Prevents Next.js from re-encoding (for self-hosted images)
+        quality={80}
+        priority
+        placeholder="blur"
+        blurDataURL={imageSrc}
+        unoptimized
+        className = "object-cover md:object-fill"
       />
     </div>
   );
