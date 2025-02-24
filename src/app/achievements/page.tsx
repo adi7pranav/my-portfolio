@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 interface AchievementProps {
   position: string;
@@ -28,13 +29,15 @@ const AchievementDetails: React.FC<AchievementProps> = ({
         <div className="flex  justify-center flex-col md:flex-col gap-1">
           {/* Image */}
           <div className="flex justify-center flex-col gap-2">
-            <img
+            <Image width={300} height={200}
               src={imageSrc1}
+              alt = "Image1"
               className="w-auto h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-300"
             />
 
           {imageSrc2 && (
-              <img
+              <Image width={300} height={200}
+               alt = "Image2"
                 src={imageSrc2}
                 className="w-auto h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-300"
               />

@@ -1,5 +1,6 @@
 "use client";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import Image from 'next/image';
 export default function HomePage() {
 
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
       <div className="flex justify-center">
   <div className="relative w-64 h-64 rounded-full overflow-hidden 
     bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
-    <img 
+    <Image width={300} height={200} 
       src="/profile.png" 
       alt="Profile" 
       className="w-full h-full object-cover"
@@ -25,7 +26,7 @@ export default function HomePage() {
         <p className="text-lg text-gray-900 dark:text-gray-300">
           Software Developer | Passionate about building scalable applications.
         </p>
-        <a  href="https://drive.google.com/uc?export=download&id=1S7AZiGgHmBMOLLYEgdw_xyINgygdmfvK" 
+        <a  href="https://drive.google.com/uc?export=download&id=1lwdy_SVX0JetusxH26mmsHL10zBcAi_c" 
           download
           className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md 
           hover:bg-blue-700 transition-all"

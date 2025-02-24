@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import LiIcon from "@/components/liIcon";
+import Image from "next/image";
 
 // Define Props for Experience
 interface ExperienceProps {
@@ -30,7 +31,7 @@ const ExpDetails: React.FC<ExperienceProps> = ({
       <div className="bg-white/70 text-black dark:bg-black/70 dark:text-white backdrop-blur-sm p-3 rounded-lg">
         <div className="flex justify-start items-start gap-4 left-16">
           {/* Image */}
-          <img src={imageSrc} alt="Company Logo" className="w-[55px] h-[55px] rounded-[10px] object-cover" />
+          <Image width={300} height={200} src={imageSrc} alt="Company Logo" className="w-[55px] h-[55px] rounded-[10px] object-cover" />
 
           {/* Text Content */}
           <div>
@@ -87,7 +88,7 @@ const EduDetails: React.FC<EducationProps> = ({
       <div className="bg-white/70 text-black dark:bg-black/70 dark:text-white backdrop-blur-sm p-3 rounded-lg">
         <div className="flex justify-start items-start gap-4 left-16">
           {/* Image */}
-          <img src={imageSrc} alt="Institute Logo" className="w-[55px] h-[55px] rounded-[10px] object-cover" />
+          <Image width={300} height={200} src={imageSrc} alt="Institute Logo" className="w-[55px] h-[55px] rounded-[10px] object-cover" />
 
           {/* Text Content */}
           <div>
@@ -115,7 +116,7 @@ const EduDetails: React.FC<EducationProps> = ({
 // Main Experience Component
 export default function Experience() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 dark:text-white pt-24 pb-20">
+    <main className="relative min-h-screen transition-all duration-5000 text-black dark:text-white pt-24 pb-20">
       <div className="relative flex-row items-center justify-center">
         <h2 className="font-bold text-6xl mb-8 w-full text-center">Experience</h2>
         <div className="w-[90%] mx-auto relative">
@@ -126,7 +127,7 @@ export default function Experience() {
               companyLink="https://moneyview.in/"
               time="July, 2024 - Present"
               address="Bengaluru, India"
-              imageSrc="./mv1.jpg"
+              imageSrc="/mv1.jpg"
               work={[
                 "Contributed to the creation of the BNPL flow for iOS PWA users, ensuring smooth backend integration while handling edge cases in purchase details fetching and lead creation, improving system stability.",
                 "Sanitized invalid documents in S3, fixed incorrect extensions, and back-populated data using Python.",
@@ -141,7 +142,7 @@ export default function Experience() {
               companyLink="https://moneyview.in/"
               time="Feb 2024 - Jun 2024"
               address="Bengaluru, India"
-              imageSrc="./mv1.jpg"
+              imageSrc="/mv1.jpg"
               work={[
                 "Enhanced Buy Now Pay Later (BNPL) feature with dynamic interest rate selection based on dealer input.",
                 "Developed AddOn Service feature in BNPL to enable users to select dealer-provided services during purchases with support for multiple addOns and multiple AddOn types like VAS and Insurance.",
@@ -164,7 +165,7 @@ export default function Experience() {
             time="June 2024"
             address="Bengaluru, India"
             marks="CGPA: 8.96"
-            imageSrc="./bmsit.jpg"
+            imageSrc="/bmsit.jpg"
           />
           <EduDetails
             degree="XIIᵗʰ"
@@ -173,7 +174,7 @@ export default function Experience() {
             time="Apr 2019"
             address="Patna"
             marks="Percentage: 85.8%"
-            imageSrc="./gn.jpg"
+            imageSrc="/gn.jpg"
           />
           <EduDetails
             degree="Xᵗʰ"
@@ -181,7 +182,7 @@ export default function Experience() {
             time="Apr 2017"
             address="Patna"
             marks="CGPA: 10"
-            imageSrc="./gn.jpg"
+            imageSrc="/gn.jpg"
           />
         </ul>
       </div>

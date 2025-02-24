@@ -1,18 +1,19 @@
 "use client";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import Image from "next/image";
 
 export default function About() {
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center pt-24">
       <div className="container mx-auto px-6 lg:px-12">
       <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-5 items-center">
-          {/* Profile Image */}
+          {/* Profile Image fill */}
           <div className="flex justify-center">
             <div
               className="relative w-64 h-64 rounded-full overflow-hidden 
             bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg"
             >
-              <img
+              <Image width={300} height={200}
                 src="/profile.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
@@ -41,7 +42,7 @@ export default function About() {
 
 
 <a
-              href="https://drive.google.com/uc?export=download&id=1S7AZiGgHmBMOLLYEgdw_xyINgygdmfvK"
+              href="https://drive.google.com/uc?export=download&id=1lwdy_SVX0JetusxH26mmsHL10zBcAi_c"
               download
               className="inline-block px-6 py-2 mt-2 bg-blue-600 text-white rounded-lg shadow-md 
               hover:bg-blue-700 transition-all"
@@ -88,13 +89,13 @@ export default function About() {
             My Paintings
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            {/* Replace with your actual painting image URLs */}
-            <img src="/painting1.jpg" alt="Painting 1" className="rounded-lg shadow-md" />
-            <img src="/painting2.jpg" alt="Painting 2" className="rounded-lg shadow-md" />
-            <img src="/painting3.jpg" alt="Painting 3" className="rounded-lg shadow-md" />
-            <img src="/painting4.jpg" alt="Painting 4" className="rounded-lg shadow-md" />
-            <img src="/painting5.png" alt="Painting 4" className="rounded-lg shadow-md" />
-            <img src="/painting6.png" alt="Painting 4" className="rounded-lg shadow-md" />
+            {/* Replace with your actual painting Image fill URLs */}
+            <Image width={300} height={200} src="/painting1.jpg" alt="Painting 1" className="rounded-lg shadow-md" />
+            <Image width={300} height={200} src="/painting2.jpg" alt="Painting 2" className="rounded-lg shadow-md" />
+            <Image width={300} height={200} src="/painting3.jpg" alt="Painting 3" className="rounded-lg shadow-md" />
+            <Image width={300} height={200} src="/painting4.jpg" alt="Painting 4" className="rounded-lg shadow-md" />
+            <Image width={300} height={200} src="/painting5.png" alt="Painting 4" className="rounded-lg shadow-md" />
+            <Image width={300} height={200} src="/painting6.png" alt="Painting 4" className="rounded-lg shadow-md" />
           </div>
         </div>
       </section>

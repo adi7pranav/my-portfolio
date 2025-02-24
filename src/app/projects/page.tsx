@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import {FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 interface AchievementProps {
   title: string;
@@ -25,7 +26,8 @@ const ProjectDetails: React.FC<AchievementProps> = ({
         <div className="flex  justify-center flex-col md:flex-col gap-1 w-full max-w-[300px]">
           {/* Image */}
           <div className="flex justify-center flex-col gap-2 w-full max-w-[300px]">
-          <img
+          <Image width={300} height={200}
+          alt = "project preview"
           src={`https://opengraph.githubassets.com/1/adi7pranav/${imageSrc}`}
           className="h-auto aspect-[16/9] rounded-lg object-cover hover:scale-105 transition-transform duration-300"
           />
