@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <main className="scrollbar-hide">
       <HomePage/>
-      <Experience/>
+      <div className="min-h-screen">
+        <Experience />
+      </div>
       <Projects/>
       <Achievements/>
       <About/>
