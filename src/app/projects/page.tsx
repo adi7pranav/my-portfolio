@@ -3,7 +3,7 @@ import React from "react";
 import {FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
-interface AchievementProps {
+interface ProjectProps {
   title: string;
   subtitle: string;
   techStack: string;
@@ -12,7 +12,7 @@ interface AchievementProps {
   imageSrc: string;
 }
 
-const ProjectDetails: React.FC<AchievementProps> = ({
+const ProjectDetails: React.FC<ProjectProps> = ({
   title,
   subtitle,
   techStack,
@@ -78,7 +78,8 @@ export default function Projects() {
       <h2 className="font-bold text-6xl w-full text-center">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center max-w-[90%] mx-auto">
+
           <ProjectDetails
             title="Zero Waste"
             subtitle="Request and Donation App"
