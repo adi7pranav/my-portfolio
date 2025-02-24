@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true, // Ignore ESLint errors during build
-  },
+const nextConfig = {
   images: {
-    domains: ["opengraph.githubassets.com"], // Add allowed external image domains
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "opengraph.githubassets.com",
+      },
+    ],
   },
 };
 

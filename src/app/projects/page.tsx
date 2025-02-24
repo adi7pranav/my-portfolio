@@ -46,7 +46,7 @@ const ProjectDetails: React.FC<ProjectProps> = ({
             {/* <a href={projectLink} target="_blank" rel="noopener noreferrer">
                {title}
               </a><br/> */}
-            <span className="capitalize text-lg sm:text-lg text-dark/75 italic">
+            <span className="capitalize text-base text-dark/75 italic">
               {techStack}
             </span>
             
@@ -57,7 +57,7 @@ const ProjectDetails: React.FC<ProjectProps> = ({
             <li key={index}>{point}</li>
           ))}
         </ul> */}
-            <p className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg">{desc}</p>
+            <p className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg min-h-[300px] mt-2 mb-2">{desc}</p>
             <a  href={projectLink} target="_blank"
   className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md 
              hover:bg-blue-700 transition-all dark:bg-orange-600"
@@ -94,11 +94,11 @@ export default function Projects() {
             techStack="HTML, CSS, JS, PHP, MySQL"
             projectLink="https://github.com/adi7pranav/PAWS-Pet_Adoption_and_Welfare_System"
             imageSrc="PAWS-Pet_Adoption_and_Welfare_System"
-            desc="PAWS - Pet Adoption and Welfare System is a user-friendly platform designed to facilitate pet adoption and welfare. Built with HTML, CSS, JavaScript, PHP, and MySQL on an Apache server (XAMPP), it connects pet seekers with adopters, ensuring a seamless adoption process while promoting responsible pet care and welfare. 🐾"
+            desc="PAWS - Pet Adoption and Welfare System is a user-friendly platform designed with HTML, CSS, JavaScript, PHP, and MySQL on an Apache server (XAMPP), it connects pet seekers with adopters, NGOs and VETs with role based login implemented, ensuring a seamless adoption process while promoting responsible pet care and welfare. 🐾"
             />
           <ProjectDetails
             title="Saarthi"
-            subtitle="Road Sign Detection and Alert System"
+            subtitle="Road Sign Detection, Alert System"
             techStack="Python, Numpy, OpenCV"
             projectLink="https://github.com/adi7pranav/Saarthi-Traffic-Sign-Detection-and-Alert-System"
             imageSrc="Saarthi-Traffic-Sign-Detection-and-Alert-System"

@@ -22,8 +22,8 @@ export default function HomePage() {
 
       {/* Text Info + Resume */}
       <div className="text-center md:text-left space-y-4">
-        <h1 className="text-4xl font-bold">Pranav Aditya</h1>
-        <p className="text-lg text-gray-900 dark:text-gray-300">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Pranav Aditya</h1>
+        <p className="text-lg text-gray-900 dark:text-white">
           Software Developer | Passionate about building scalable applications.
         </p>
         <a  href="https://drive.google.com/uc?export=download&id=1lwdy_SVX0JetusxH26mmsHL10zBcAi_c" 
