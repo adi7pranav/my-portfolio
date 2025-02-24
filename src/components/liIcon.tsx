@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState, RefObject } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
+import { usePathname } from "next/navigation";
 
 interface LiIconProps {
   reference: RefObject<HTMLLIElement | null>;
@@ -11,8 +12,9 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
     target: reference,
     offset: ["start end", "center start"],
   });
-
-  const scaledProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const isHome = usePathname() === "/";
+  // const scaleFactor = isHome ? 1.7 : 1;
+  const scaledProgress = useTransform(scrollYProgress, isHome? [0.2, 0.5] : [0,1], [0, 1]);
 
   // Force re-render after mount
   const [mounted, setMounted] = useState(false);

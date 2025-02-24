@@ -27,7 +27,7 @@ const ExpDetails: React.FC<ExperienceProps> = ({
 
   return (
     <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col justify-between">
-      <LiIcon reference={ref} />
+      <LiIcon reference={ref}/>
       <div className="bg-white/70 text-black dark:bg-black/70 dark:text-white backdrop-blur-sm p-3 rounded-lg">
         <div className="flex justify-start items-start gap-4 left-16">
           {/* Image */}
@@ -84,7 +84,7 @@ const EduDetails: React.FC<EducationProps> = ({
 
   return (
     <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col justify-between">
-      <LiIcon reference={ref} />
+      <LiIcon reference={ref}/>
       <div className="bg-white/70 text-black dark:bg-black/70 dark:text-white backdrop-blur-sm p-3 rounded-lg">
         <div className="flex justify-start items-start gap-4 left-16">
           {/* Image */}

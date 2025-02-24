@@ -5,7 +5,6 @@ import Image from "next/image";
 interface AchievementProps {
   position: string;
   company: string;
-  companyLink: string;
   time: string;
   address: string;
   work: string;
@@ -16,7 +15,6 @@ interface AchievementProps {
 const AchievementDetails: React.FC<AchievementProps> = ({
   position,
   company,
-  companyLink,
   time,
   address,
   work,
@@ -56,7 +54,7 @@ const AchievementDetails: React.FC<AchievementProps> = ({
                {company}
               {/* </a> */}
               <br/>
-            <span className="capitalize text-lg sm:text-lg text-dark/75">
+            <span className="capitalize text-base text-dark/75">
               {time} | {address}
             </span>
             
@@ -67,7 +65,7 @@ const AchievementDetails: React.FC<AchievementProps> = ({
             <li key={index}>{point}</li>
           ))}
         </ul> */}
-           <p className="bg-white/30 dark:bg-black/30 backdrop-blur-sm p-3 rounded-lg">{work}</p>
+           <p className="bg-white/30 dark:bg-black/30 backdrop-blur-sm p-3 rounded-lg min-h-[100px] mt-2 mb-2">{work}</p>
           </div>
         </div>
       </div>
@@ -85,7 +83,6 @@ export default function Achievements() {
           <AchievementDetails
             position="Best Student of Institute"
             company="BMSIT & M"
-            companyLink="https://google.com"
             time="March 2024"
             address="Bengaluru"
             imageSrc1="/awardSoty.jpg"
@@ -95,7 +92,6 @@ export default function Achievements() {
            <AchievementDetails
             position="National Winner"
             company="Smart India Hackathon"
-            companyLink="https://google.com"
             time="Aug 2022"
             address="Komarapalayam"
             imageSrc1="/awardSih.jpg"
@@ -105,7 +101,6 @@ export default function Achievements() {
           <AchievementDetails
             position="International Siver Medal"
             company="SOF Cyber Olympiad"
-            companyLink="https://google.com"
             time="2018"
             address="Delhi"
             imageSrc1="/awardSof.jpg"
@@ -121,7 +116,6 @@ export default function Achievements() {
           <AchievementDetails
             position="2 Times, 1st Runner UP"
             company="VTU  State Quiz"
-            companyLink="https://google.com"
             time="2021, 2022"
             address="Bengaluru"
             imageSrc1="/awardQuiz.jpg"
@@ -131,7 +125,6 @@ export default function Achievements() {
            <AchievementDetails
             position="Resource Person"
             company="Open Course on Programming for IT"
-            companyLink="https://google.com"
             time="12th-16th June 2023"
             address="BMSIT & M"
             imageSrc1="/openCourse1.png"
@@ -141,7 +134,6 @@ export default function Achievements() {
           <AchievementDetails
             position="Coordinator, Quiz Club"
             company="BMSIT & M"
-            companyLink="https://google.com"
             time="2023"
             address="Bengaluru"
             imageSrc1="/quizCoord1.jpg"
@@ -151,17 +143,15 @@ export default function Achievements() {
             <AchievementDetails
             position="First, City School Science Quiz"
             company="BMSIT & M"
-            companyLink="https://google.com"
             time="2017"
             address="Patna"
             imageSrc1="/cityQuiz.jpg"
             imageSrc2="/cityQuiz2.jpg"
-            work="Won first place in a prestigious city-wide science quiz, demonstrating deep knowledge and quick thinking."
+            work="Won first place in city-wide science quiz and was awarded a running shield by then-Governor of Bihar who later on became President of India, Mr. Ramnath Kovind"
             />
           <AchievementDetails
             position="Qualified RMO"
             company="Homi Bhabha Centre for Science Education"
-            companyLink="https://olympiads.hbcse.tifr.res.in/"
             time="2018"
             address="Patna"
             imageSrc2="/RMO.jpg"
@@ -171,10 +161,9 @@ export default function Achievements() {
             <AchievementDetails
             position="NCC A Certificate"
             company="No.1 Bihar Air Sqn."
-            companyLink="https://olympiads.hbcse.tifr.res.in/"
             time="2016"
             address="Patna"
-            imageSrc1="/nccA.png"
+            imageSrc1="/nccA1.png"
             imageSrc2=""
             work="Earned the NCC 'A' Certificate, demonstrating discipline, leadership, and commitment to service under the Indian National Cadet Corps (Air Wing)."
             />
