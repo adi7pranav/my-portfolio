@@ -16,14 +16,14 @@
   });
 
   export const metadata: Metadata = {
-    title: "SDE",
+    title: "Pranav Aditya",
     description: "Portfolio",
   };
 
   export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
       <html lang="en">
-        <body className="scrollbar-hide">
+        <body>
           <ThemeProvider>
             <Background/>
               <Navbar />
