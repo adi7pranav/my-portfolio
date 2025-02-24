@@ -88,8 +88,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="March 2024"
             address="Bengaluru"
-            imageSrc1="./awardSoty.jpg"
-            imageSrc2="./awardSoty3.png"
+            imageSrc1="/awardSoty.jpg"
+            imageSrc2="/awardSoty3.png"
             work="Recognized as the Best Student of the Institute for outstanding academic performance, leadership, and contributions to the college community."
             />
            <AchievementDetails
@@ -98,8 +98,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="Aug 2022"
             address="Komarapalayam"
-            imageSrc1="./awardSih.jpg"
-            imageSrc2="./awardSih2.jpg"
+            imageSrc1="/awardSih.jpg"
+            imageSrc2="/awardSih2.jpg"
             work="Part of team that won in India’s largest hackathon, solving real-world problems with innovation, competing against top national teams."
             />
           <AchievementDetails
@@ -108,8 +108,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="2018"
             address="Delhi"
-            imageSrc1="./awardSof.jpg"
-            imageSrc2="./awardSof2.jpg"
+            imageSrc1="/awardSof.jpg"
+            imageSrc2="/awardSof2.jpg"
             work="Secured International 2nd Rank in the Science Olympiad Foundation’s Cyber Olympiad, showcasing excellence in computational and analytical skills."
             />
       </div>
@@ -124,8 +124,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="2021, 2022"
             address="Bengaluru"
-            imageSrc1="./awardQuiz.jpg"
-            imageSrc2="./awardQuiz2.jpg"
+            imageSrc1="/awardQuiz.jpg"
+            imageSrc2="/awardQuiz2.jpg"
             work="Achieved 1st runner-up position twice in the VTU State Quiz Championship, competing against top university teams in technical and general knowledge quizzes."
             />
            <AchievementDetails
@@ -134,8 +134,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="12th-16th June 2023"
             address="BMSIT & M"
-            imageSrc1="./openCourse1.png"
-            imageSrc2="./openCourse2.jpg"
+            imageSrc1="/openCourse1.png"
+            imageSrc2="/openCourse2.jpg"
             work="Served as a resource person, mentoring students in programming fundamentals, algorithms, and problem-solving as part of an open IT course."
             />
           <AchievementDetails
@@ -144,8 +144,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="2023"
             address="Bengaluru"
-            imageSrc1="./quizCoord1.jpg"
-            imageSrc2="./quizCoord2.jpg"
+            imageSrc1="/quizCoord1.jpg"
+            imageSrc2="/quizCoord2.jpg"
             work="Coordinated the college quiz club, organizing competitions like Quizzardry and training students for inter-collegiate and national quiz events."
             />
             <AchievementDetails
@@ -154,8 +154,8 @@ export default function Achievements() {
             companyLink="https://google.com"
             time="2017"
             address="Patna"
-            imageSrc1="./cityQuiz.jpg"
-            imageSrc2="./cityQuiz2.jpg"
+            imageSrc1="/cityQuiz.jpg"
+            imageSrc2="/cityQuiz2.jpg"
             work="Won first place in a prestigious city-wide science quiz, demonstrating deep knowledge and quick thinking."
             />
           <AchievementDetails
@@ -164,8 +164,8 @@ export default function Achievements() {
             companyLink="https://olympiads.hbcse.tifr.res.in/"
             time="2018"
             address="Patna"
-            imageSrc2="./RMO.jpg"
-            imageSrc1="./RMO2.png"
+            imageSrc2="/RMO.jpg"
+            imageSrc1="/RMO2.png"
             work="Selected for the RMO, one of Indias most competitive mathematics contests, showcasing advanced problem-solving abilities"
             />
             <AchievementDetails
@@ -174,7 +174,7 @@ export default function Achievements() {
             companyLink="https://olympiads.hbcse.tifr.res.in/"
             time="2016"
             address="Patna"
-            imageSrc1="./nccA.png"
+            imageSrc1="/nccA.png"
             imageSrc2=""
             work="Earned the NCC 'A' Certificate, demonstrating discipline, leadership, and commitment to service under the Indian National Cadet Corps (Air Wing)."
             />
