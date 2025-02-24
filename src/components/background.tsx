@@ -10,7 +10,7 @@ export default function Background() {
   // Determine the background image based on themeName and darkMode
   const imageSrc = useMemo(() => {
     if (themeName === "abstract") return darkMode ? "/bgDarkY.webp" : "/bgLightY.webp";
-    if (themeName === "nature") return darkMode ? "/bgdark1.png" : "/bgLight1.png";
+    if (themeName === "nature") return darkMode ? "/bgDark1.png" : "/bgLight1.png";
     return darkMode ? "/bgDark3.png" : "/bgLight3.png"; // Default theme
   }, [darkMode, themeName]);
 
