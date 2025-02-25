@@ -5,7 +5,7 @@ import HomePage from "./home";
 import Projects from "./projects/page";
 export default function Home() {
   return (
-    <main className="scrollbar-hide">
+    <main>
       <HomePage/>
       <Experience />
       <Projects/>
