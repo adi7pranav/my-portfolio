@@ -116,7 +116,7 @@ const EduDetails: React.FC<EducationProps> = ({
 // Main Experience Component
 export default function Experience() {
   return (
-    <main className="relative min-h-screen transition-all duration-5000 text-black dark:text-white pt-24 pb-20">
+    <main className="relative min-h-screen transition-all duration-300 text-black dark:text-white pt-24 pb-20">
       <div className="relative flex-row items-center justify-center">
         <h2 className="font-bold text-6xl mb-8 w-full text-center">Experience</h2>
         <div className="w-[90%] mx-auto relative">
