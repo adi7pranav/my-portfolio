@@ -112,12 +112,29 @@ export default function Experience() {
 
         <Timeline>
 
+          <TimelineItem imageSrc="/kotak811.jpg">
+            <ExpDetails
+              position="SDE - I"
+              company="Kotak811"
+              companyLink="https://www.kotak.com/"
+              time="Oct 2025 - Present"
+              address="Bengaluru, India"
+              work={[
+                "Developed and maintained the LoanLeads microservice, capturing user intent across multiple loan products including Gold, Car, Two-Wheeler, and Business loans, enabling targeted cross-sell journeys.",
+                "Designed and launched app-specific loan journeys for Car, Two-Wheeler, and Gold loans, expanding mobile funnel coverage and improving product discovery and conversion accuracy.",
+                "Implemented API versioning and feature-flag based DIY redirection flows to enable backward-compatible rollout of new loan journeys while allowing users to self-navigate to relevant products.",
+                "Improved observability with structured logging, Coralogix dashboards, and alerting, enabling faster debugging, proactive monitoring, and increased service reliability."
+              ]}
+            />
+          </TimelineItem>
+
+
           <TimelineItem imageSrc="/mv1.jpg">
             <ExpDetails
               position="SDE"
               company="Moneyview"
               companyLink="https://moneyview.in/"
-              time="July, 2024 - Present"
+              time="July, 2024 - Spe2025"
               address="Bengaluru, India"
               work={[
                 "Contributed to the creation of the BNPL flow for iOS PWA users, ensuring smooth backend integration while handling edge cases in purchase details fetching and lead creation.",
