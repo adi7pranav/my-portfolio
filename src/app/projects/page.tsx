@@ -21,21 +21,22 @@ const ProjectDetails: React.FC<ProjectProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="my-8 w-[80%] max-w-lg mx-auto flex flex-col justify-center">
-      <div className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg flex justify-between max-w-[500px] ">
-        <div className="flex  justify-center flex-col md:flex-col gap-1 w-full max-w-[300px]">
+   <div className="my-8 w-full max-w-lg flex flex-col h-full">
+      <div className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg flex justify-between">
+        <div className="flex flex-col gap-2 w-full">
           {/* Image */}
-          <div className="flex justify-center flex-col gap-2 w-full max-w-[300px]">
-          <Image width={300} height={200}
+          <div className="flex flex-col gap-2 w-full">
+          <Image width={800} height={450}
           alt = "project preview"
           src={`https://opengraph.githubassets.com/1/adi7pranav/${imageSrc}`}
-          className="h-auto aspect-[16/9] rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+
           />
             </div>
           
 
           {/* Text Content */}
-          <div>
+          <div className="flex flex-col flex-grow">
             <h3 className="capitalize font-bold text-xl flex items-center underline underline-offset-4">
               {title}<br/>
               
@@ -58,12 +59,11 @@ const ProjectDetails: React.FC<ProjectProps> = ({
           ))}
         </ul> */}
             <p className="bg-white/70 dark:bg-black/70 backdrop-blur-sm p-3 rounded-lg min-h-[300px] mt-2 mb-2">{desc}</p>
-            <a  href={projectLink} target="_blank"
-  className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md 
-             hover:bg-blue-700 transition-all dark:bg-orange-600"
->
-  <FaGithub /> View Github Link →
-</a>
+            <a  href={projectLink} 
+            target="_blank" 
+            className="mt-auto flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-all dark:bg-orange-600">
+            <FaGithub /> View on Github →
+            </a>
 
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Projects() {
       <h2 className="font-bold text-6xl w-full text-center">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center max-w-[90%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto px-4 md:px-6">
 
           <ProjectDetails
             title="Zero Waste"
