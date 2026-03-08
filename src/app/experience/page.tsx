@@ -1,7 +1,4 @@
 "use client";
-import { useRef } from "react";
-import LiIcon from "@/components/liIcon";
-import Image from "next/image";
 import Timeline from "@/components/timeline/component"
 import TimelineItem from "@/components/timeline/item"
 
